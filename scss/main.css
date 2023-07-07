@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-color: rgb(148, 28, 28);
+}
+.home .home__title {
+  font-size: 100px;
+  color: red;
+}
+
+body {
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

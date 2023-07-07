@@ -1,0 +1,12 @@
+@import './config';
+
+.home {
+    background-color: rgb(148, 28, 28);
+
+
+    #{&}__title {
+        font-size: 100px;
+        color: $colorPrimary;
+        
+    }
+}

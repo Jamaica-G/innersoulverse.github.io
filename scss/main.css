@@ -27,8 +27,8 @@ html {
 
 .header__title {
   grid-area: HEAD;
-  font-family: "BEER02-A CROSS", sans-serif;
-  font-size: 3rem;
+  font-family: "Dear Dreamer", sans-serif;
+  font-size: 4rem;
   display: grid;
 }
 .header__menu {
@@ -117,15 +117,15 @@ html {
   flex-wrap: wrap;
   gap: 48px;
 }
-.image img {
+.image__card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.image__card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 33.3333333333vw;
   min-width: 300px;
   height: auto;
-}
-.image__card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 a:hover {

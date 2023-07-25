@@ -28,7 +28,8 @@
 .header {
     &__title {
         grid-area: HEAD;
-        font-family: 'BEER02-A CROSS', sans-serif;                       
+        font-family: 'Dear Dreamer', sans-serif;
+                                                                  
         font-size: $fontXlg;
         display: grid;
 
@@ -118,17 +119,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 48px;
-    img {
-        object-fit: cover;
-        width: calc(100vw/3);
-        min-width: 300px;
-        height: auto;
-    }
     &__card {
-
         &:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-          }
+        }
+        img {
+            object-fit: cover;
+            width: calc(100vw/3);
+            min-width: 300px;
+            height: auto;
+        }
     }
 }
 

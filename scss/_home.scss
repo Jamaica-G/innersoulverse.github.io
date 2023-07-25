@@ -16,7 +16,7 @@
     padding: 48px calc(100vw*0.1);
     display: grid;
     justify-content: space-between; 
-    grid-auto-columns: 2fr 2fr 12fr 3fr;
+    grid-auto-columns: 3fr 1fr 15fr 3fr;
     grid-auto-rows: minmax(10px, auto); 
     grid-template-areas:
     "HEAD     HEAD MOTTO MENU"
@@ -61,7 +61,8 @@
         font-size: $fontMed;
         color: $colorText;
         font-family: 'Lymphatic', sans-serif;
-        align-self: end;
+        align-self: flex-end;
+        padding-bottom: 6px; // to align with inner soul verse
     }
 
 }
@@ -113,21 +114,27 @@
 }
 
 
-.image {
+.banner {
     margin-top: 24px;
     grid-area: BODY;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 48px;
     &__card {
+        border-radius: 4rem;
+        width: 70vw;
+        overflow: hidden;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
         &:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
         img {
             object-fit: cover;
-            width: calc(100vw/3);
-            min-width: 300px;
+            width: 100%;
             height: auto;
         }
     }

@@ -13,7 +13,7 @@ html {
   padding: 48px 10vw;
   display: grid;
   justify-content: space-between;
-  grid-auto-columns: 2fr 2fr 12fr 3fr;
+  grid-auto-columns: 3fr 1fr 15fr 3fr;
   grid-auto-rows: minmax(10px, auto);
   grid-template-areas: "HEAD     HEAD MOTTO MENU" "UPCOMING EVENT EVENT EVENT" "BODY     BODY BODY  BODY" "FOOT     FOOT FOOT  FOOT";
 }
@@ -57,7 +57,8 @@ html {
   font-size: 1.5rem;
   color: rgb(58, 70, 100);
   font-family: "Lymphatic", sans-serif;
-  align-self: end;
+  align-self: flex-end;
+  padding-bottom: 6px;
 }
 @media only screen and (max-width: 550px) {
   .header__motto {
@@ -110,22 +111,29 @@ html {
   color: rgb(58, 70, 100);
 }
 
-.image {
+.banner {
   margin-top: 24px;
   grid-area: BODY;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 48px;
 }
-.image__card:hover {
+.banner__card {
+  border-radius: 4rem;
+  width: 70vw;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner__card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.image__card img {
+.banner__card img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 33.3333333333vw;
-  min-width: 300px;
+  width: 100%;
   height: auto;
 }
 

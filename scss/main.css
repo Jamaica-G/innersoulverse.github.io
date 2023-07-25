@@ -12,17 +12,23 @@ html {
 .home {
   padding: 48px 10vw;
   display: grid;
-  grid-auto-flow: row;
   justify-content: space-between;
-  grid-auto-columns: 11fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-template-areas: "HEAD MENU" "EVENT EVENT" "BODY BODY" "FOOT FOOT";
+  grid-auto-columns: 2fr 9fr 1fr;
+  grid-auto-rows: minmax(10px, auto);
+  grid-template-areas: "HEAD     MOTTO MENU" "UPCOMING EVENT EVENT" "BODY     BODY  BODY" "FOOT     FOOT  FOOT";
+}
+@media only screen and (max-width: 550px) {
+  .home {
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas: "HEAD  MENU" "MOTTO MOTTO" "UPCOMING  UPCOMING" "EVENT EVENT" "BODY  BODY" "FOOT  FOOT";
+  }
 }
 
 .header__title {
   grid-area: HEAD;
   font-family: "BEER02-A CROSS", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   display: grid;
 }
 .header__menu {
@@ -31,31 +37,67 @@ html {
   align-self: end;
   text-align: left;
   font-family: "Lymphatic", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .header__menu a, .header__menu a:visited {
   text-decoration: none;
   color: rgb(58, 70, 100);
 }
 .header__motto {
-  font-size: 1rem;
-  color: hsl(233, 8%, 62%);
+  grid-area: MOTTO;
+  display: grid;
+  font-size: 1.5rem;
+  color: rgb(58, 70, 100);
   font-family: "Lymphatic", sans-serif;
+  align-self: end;
 }
 
-.event {
-  margin-top: 20px;
+.announcement, .announcement__event, .announcement__upcoming {
   font-family: "Lymphatic", sans-serif;
-  font-size: 1rem;
-  grid-area: EVENT;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
-.event__date {
+.announcement__upcoming {
+  margin-top: 12px;
+  grid-area: UPCOMING;
+  color: rgb(58, 70, 100);
+  display: flex;
+}
+.announcement__event {
+  grid-area: EVENT;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-direction: row;
+  margin: 12px;
+}
+.announcement__event__date {
+  grid-area: EVENT;
   color: rgb(234, 160, 162);
   font-weight: bold;
   padding-left: 6px;
   border-left: 2px solid rgba(170, 170, 170, 0.25);
 }
-.event__title {
-  padding: 6px;
+.announcement__event__title {
+  text-decoration: none;
   color: rgb(58, 70, 100);
+}
+
+.image {
+  grid-area: BODY;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 33.3333333333vw;
+  min-width: 300px;
+  height: auto;
+}
+
+a:hover {
+  color: rgba(100, 81, 58, 0.5);
 }/*# sourceMappingURL=main.css.map */

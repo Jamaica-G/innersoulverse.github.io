@@ -16,7 +16,7 @@
     padding: 48px calc(100vw*0.1);
     display: grid;
     justify-content: space-between; 
-    grid-auto-columns: 2fr 9fr 1fr;
+    grid-auto-columns: 3fr 9fr 3fr;
     grid-auto-rows: minmax(10px, auto); 
     grid-template-areas:
     "HEAD     MOTTO MENU"
@@ -34,10 +34,15 @@
 
     }
     &__menu {
+        @include mobile {
+            text-align: right;
+            font-size: $fontMed;
+        }
         grid-area: MENU;
-        display: grid;
-        align-self: end;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
         font-family: 'Lymphatic', sans-serif;
         font-size: $fontLg;
         a, a:visited {
@@ -46,6 +51,9 @@
         }
     }
     &__motto {
+        @include mobile {
+            font-size: $fontSm;
+        }
         grid-area: MOTTO;
         display: grid;
         font-size: $fontMed;
@@ -61,11 +69,15 @@
     font-size: $fontMed;
     text-decoration: none;
     &__upcoming {
-        margin-top: 12px;
+        margin-top: 24px;
         @extend .announcement;
         grid-area: UPCOMING;
         color: $colorText;
         display: flex;
+        padding: 6px 0px;
+        border-top: 2px solid $colorDivider;
+        border-bottom: 2px solid $colorDivider
+
     }
     &__event {
         @extend .announcement;
@@ -74,14 +86,19 @@
         justify-content: flex-start;
         gap: 12px;
         flex-direction: row;
-        margin: 12px;
-        &__date {
+        margin-top: 24px;
+        padding: 6px;
+        border-top: 2px solid $colorDivider;
+        border-bottom: 2px solid $colorDivider;
+        &__date{
             grid-area: EVENT;
             color: $colorEventDate;
             font-weight: bold;
             padding-left: 6px;
-            border-left: 2px solid $colorDivider;
         }   
+        &__date:not(:first-child) {
+            border-left: 2px solid $colorDivider;
+        }
         &__title {
             text-decoration: none;
                 color:$colorText;
@@ -91,17 +108,24 @@
 
 
 .image {
+    margin-top: 24px;
     grid-area: BODY;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px;
     img {
         object-fit: cover;
         width: calc(100vw/3);
         min-width: 300px;
         height: auto;
-      }
+    }
+    &__card {
+
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+    }
 }
 
 a:hover {

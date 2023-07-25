@@ -13,9 +13,9 @@ html {
   padding: 48px 10vw;
   display: grid;
   justify-content: space-between;
-  grid-auto-columns: 3fr 9fr 3fr;
+  grid-auto-columns: 2fr 2fr 12fr 3fr;
   grid-auto-rows: minmax(10px, auto);
-  grid-template-areas: "HEAD     MOTTO MENU" "UPCOMING EVENT EVENT" "BODY     BODY  BODY" "FOOT     FOOT  FOOT";
+  grid-template-areas: "HEAD     HEAD MOTTO MENU" "UPCOMING EVENT EVENT EVENT" "BODY     BODY BODY  BODY" "FOOT     FOOT FOOT  FOOT";
 }
 @media only screen and (max-width: 550px) {
   .home {
@@ -29,7 +29,8 @@ html {
   grid-area: HEAD;
   font-family: "Dear Dreamer", sans-serif;
   font-size: 4rem;
-  display: grid;
+  display: flex;
+  align-self: flex-end;
 }
 .header__menu {
   grid-area: MENU;

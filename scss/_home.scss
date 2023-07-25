@@ -16,13 +16,13 @@
     padding: 48px calc(100vw*0.1);
     display: grid;
     justify-content: space-between; 
-    grid-auto-columns: 3fr 9fr 3fr;
+    grid-auto-columns: 2fr 2fr 12fr 3fr;
     grid-auto-rows: minmax(10px, auto); 
     grid-template-areas:
-    "HEAD     MOTTO MENU"
-    "UPCOMING EVENT EVENT"
-    "BODY     BODY  BODY"
-    "FOOT     FOOT  FOOT"
+    "HEAD     HEAD MOTTO MENU"
+    "UPCOMING EVENT EVENT EVENT"
+    "BODY     BODY BODY  BODY"
+    "FOOT     FOOT FOOT  FOOT"
 }
 
 .header {
@@ -31,7 +31,8 @@
         font-family: 'Dear Dreamer', sans-serif;
                                                                   
         font-size: $fontXlg;
-        display: grid;
+        display: flex;
+        align-self: flex-end;
 
     }
     &__menu {

@@ -89,6 +89,12 @@ html {
   border-top: 2px solid rgba(170, 170, 170, 0.75);
   border-bottom: 2px solid rgba(170, 170, 170, 0.75);
 }
+@media only screen and (max-width: 550px) {
+  .announcement__event {
+    border-top: none;
+    border-bottom: none;
+  }
+}
 .announcement__event__date {
   grid-area: EVENT;
   color: rgb(234, 160, 162);

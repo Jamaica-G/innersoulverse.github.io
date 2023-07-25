@@ -80,6 +80,10 @@
 
     }
     &__event {
+        @include mobile {
+            border-top: none;
+            border-bottom: none;
+        }
         @extend .announcement;
         grid-area: EVENT;
         display: flex;

@@ -162,7 +162,8 @@ a:hover {
   .aboutGrid {
     grid-auto-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "NAV      NAME" "TOP      TOP" "WHO      WHO" "MISSION  MISSION" "CONTACT  CONTACT" "FOOT     FOOT";
+    margin: 4rem 10vw;
+    grid-template-areas: "NAV      NAME" "WHO      WHO" "MISSION  MISSION" "CONTACT  CONTACT" "FOOT     FOOT";
   }
 }
 
@@ -170,7 +171,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   grid-area: NAV;
   display: flex;
-  padding: 12px;
+  padding: 1rem;
   border-bottom: 2px solid rgba(170, 170, 170, 0.75);
 }
 .aboutNav > a {
@@ -195,12 +196,13 @@ a:hover {
   grid-area: WHO;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: BEER02-A CROSS;
   font-size: 12rem;
 }
 @media only screen and (max-width: 550px) {
   .aboutWhoWeAre {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 }
 
@@ -211,6 +213,11 @@ a:hover {
   background-color: none;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 550px) {
+  .aboutImage {
+    display: none;
+  }
 }
 .aboutImage .box, .aboutImage .boxWhite, .aboutImage .boxRed {
   width: 30rem;
@@ -251,7 +258,12 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   grid-area: TOP;
   height: 1.5rem;
-  height: 100%;
+  min-height: 100%;
+}
+@media only screen and (max-width: 550px) {
+  .aboutTop {
+    display: none;
+  }
 }
 .aboutFoot {
   background-color: rgba(0, 0, 0, 0.8);

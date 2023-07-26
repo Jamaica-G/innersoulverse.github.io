@@ -17,9 +17,9 @@
     @include mobile {
         grid-auto-columns: 1fr 1fr;
         grid-auto-rows: minmax(100px, auto); 
+        margin: 4rem 10vw;
         grid-template-areas: 
         "NAV      NAME"
-        "TOP      TOP"
         "WHO      WHO"
         "MISSION  MISSION"
         "CONTACT  CONTACT"
@@ -27,7 +27,7 @@
     }
     color: whitesmoke;
     font-family: map-get($map: $mapFontFamily, $key: text);
-    margin: 4rem calc(100vw*0.1);
+    margin: 4rem 10vw;
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(1rem, auto); 
@@ -46,7 +46,7 @@
     @include bkgrdColor;
     grid-area: NAV;
     display: flex;
-    padding: 12px;
+    padding: 1rem;
     border-bottom: 2px solid $colorDivider;
     > a {
         text-decoration: none;
@@ -68,18 +68,22 @@
 
 .aboutWhoWeAre {
     @include mobile {
-        font-size: $fontXlg;
+        font-size: $fontXXlg;
     }
     @include bkgrdColor;
     grid-area: WHO;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family:map-get($map: $mapFontFamily, $key: who); // mapping
     font-size: $fontXXXlg;
     
 }
 
 .aboutImage {
+    @include mobile {
+        display: none;
+    }
     grid-area: IMAGE;
     display: flex;
     font-size: $fontMed;
@@ -124,10 +128,13 @@
 
 .about {
     &Top {
+        @include mobile {
+            display: none
+        }
         @include bkgrdColor;
         grid-area: TOP;
         height: $fontMed;
-        height: 100%
+        min-height: 100%
     }
     &Foot {
         @include bkgrdColor;

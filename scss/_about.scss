@@ -1,7 +1,7 @@
 @import 'responsive';
 
-.aboutBkgrdImg{
-    background-image: url(../img/ABOUTBKGRD.jpeg) ;
+.aboutBkgrdImg {
+    background-image: url(../img/ABOUTBKGRD.jpeg);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,26 +16,26 @@
 .aboutGrid {
     @include mobile {
         grid-auto-columns: 1fr 1fr;
-        grid-auto-rows: minmax(100px, auto); 
+        grid-auto-rows: minmax(100px, auto);
         margin: 4rem 10vw;
-        grid-template-areas: 
-        "NAV      NAME"
-        "WHO      WHO"
-        "MISSION  MISSION"
-        "CONTACT  CONTACT"
-        "FOOT     FOOT"
+        grid-template-areas:
+            "NAV      NAME"
+            "TITLE      TITLE"
+            "MISSION  MISSION"
+            "CONTACT  CONTACT"
+            "FOOT     FOOT"
     }
+
     color: whitesmoke;
     font-family: map-get($map: $mapFontFamily, $key: text);
     margin: 4rem 10vw;
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(1rem, auto); 
-    grid-template-areas: 
-    "NAV NAV NAME"
+    grid-auto-rows: minmax(1rem, auto);
+    grid-template-areas: "NAV NAV NAME"
     "TOP TOP TOP"
-    "WHO  IMAGE  MISSION"
-    "WHO  IMAGE  CONTACT"
+    "TITLE  IMAGE  MISSION"
+    "TITLE  IMAGE  CONTACT"
     "FOOT FOOT FOOT"
 
 }
@@ -48,10 +48,11 @@
     display: flex;
     padding: 1rem;
     border-bottom: 2px solid $colorDivider;
-    > a {
+
+    >a {
         text-decoration: none;
         color: white;
-        font-size:4rem
+        font-size: 4rem
     }
 }
 
@@ -66,43 +67,47 @@
     border-bottom: 2px solid $colorDivider;
 }
 
-.aboutWhoWeAre {
+.aboutTITLE {
     @include mobile {
-        font-size: $fontXXlg;
+        font-size: $fontXlg;
     }
+
     @include bkgrdColor;
-    grid-area: WHO;
+    grid-area: TITLE;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family:map-get($map: $mapFontFamily, $key: who); // mapping
-    font-size: $fontXXXlg;
-    
+    font-family:map-get($map: $mapFontFamily, $key: TITLE); // mapping
+    font-size: $fontXXlg;
+
 }
 
 .aboutImage {
     @include mobile {
         display: none;
     }
+
     grid-area: IMAGE;
     display: flex;
     font-size: $fontMed;
     background-color: none;
     justify-content: center;
     align-items: center;
+
     .box {
         width: 30rem;
         height: 30rem;
-            background-color: transparent;
+        background-color: transparent;
     }
 }
 
-.aboutMission{
+.aboutMission {
     @include bkgrdColor;
     grid-area: MISSION;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
+    align-items: flex-end;
     padding: 2rem;
     gap: 1rem;
     text-align: justify;
@@ -111,7 +116,7 @@
     font-family: map-get($map: $mapFontFamily, $key: mission);
 }
 
-.aboutContact{
+.aboutContact {
     @include bkgrdColor;
     grid-area: CONTACT;
     display: flex;
@@ -121,7 +126,7 @@
     padding-right: 2rem;
     >a {
         color: white;
-        text-decoration: none;
+        text-decoration: line;
         text-align: justify
     }
 }
@@ -131,11 +136,16 @@
         @include mobile {
             display: none
         }
+
         @include bkgrdColor;
         grid-area: TOP;
         height: $fontMed;
-        min-height: 100%
+        min-height: 100%;
+        display:flex;
+        padding: 1rem;
+        gap: 2rem;
     }
+
     &Foot {
         @include bkgrdColor;
         grid-area: FOOT;
@@ -144,7 +154,9 @@
         justify-content: flex-end;
         gap: 2rem;
         padding: 2rem
-    };
+    }
+
+    ;
 }
 
 .box {
@@ -152,13 +164,24 @@
     top: 0;
     height: 2rem;
     width: 2rem;
+
     &Red {
         @extend .box;
         background-color: red;
     }
+
     &White {
         @extend .box;
         background-color: white;
+    }
+
+    &Gold{
+        @extend .box;
+        background-color: rgb(255, 184, 28)
+    }
+    &Green{
+        @extend .box;
+        background-color: rgb(0, 119, 73)
     }
 
 }

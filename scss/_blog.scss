@@ -1,6 +1,17 @@
-.blogConstruction {
-    position: relative;
-    top: 8rem;
-    text-align: center;
-    font-size: $fontXXlg;
+.blog {
+    &Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    // &Card {
+    //     height: 200px;
+    //     width: 200px;
+    //     border: 1px solid red;
+    // }
+
+
+
 }
+

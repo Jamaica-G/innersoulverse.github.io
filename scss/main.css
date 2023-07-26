@@ -299,9 +299,9 @@ a:hover {
   background-color: rgb(0, 119, 73);
 }
 
-.blogConstruction {
-  position: relative;
-  top: 8rem;
-  text-align: center;
-  font-size: 8rem;
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */

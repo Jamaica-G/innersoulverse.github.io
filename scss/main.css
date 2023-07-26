@@ -324,10 +324,22 @@ a:hover {
   border-radius: 1rem;
   overflow: hidden;
 }
+@media only screen and (max-width: 550px) {
+  .blogCard {
+    grid-template-rows: 25vh 5vh 25vh;
+    grid-template-columns: 90vw;
+  }
+}
 .blogDisplay {
   grid-column: 1/2;
   grid-row: 1/-1;
   padding: 0.5rem;
+}
+@media only screen and (max-width: 550px) {
+  .blogDisplay {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 .blogTitle {
   grid-column: 2/3;
@@ -336,10 +348,20 @@ a:hover {
   padding: 0.5rem;
   text-decoration: underline;
 }
+@media only screen and (max-width: 550px) {
+  .blogTitle {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
 .blogText {
   padding: 0.5rem;
-  grid-column: 2/3;
-  grid-row: 2/3;
   font-size: 1.5rem;
   overflow: scroll;
+}
+@media only screen and (max-width: 550px) {
+  .blogText {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }/*# sourceMappingURL=main.css.map */

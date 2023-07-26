@@ -234,7 +234,7 @@ a:hover {
   align-items: flex-end;
   padding: 2rem;
   gap: 1rem;
-  text-align: justify;
+  text-align: left;
   font-size: 2rem;
   font-weight: 100;
   font-family: Root Beer;

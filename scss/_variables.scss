@@ -4,16 +4,19 @@ $colorText: rgb(58,70,100);
 $colorHoverLink: rgba(100, 81, 58, 0.5);
 $colorEventDate: rgb(234,160,162);
 $colorDivider: rgba(170,170,170,0.75);
- 
+$mapFontFamily: (
+    "who":BEER02-A CROSS,
+    "mission":Root Beer,
+    "text":Lymphatic,
+    "name":Dear Dreamer,
+);     
 // Font Sizes
 $fontSm: 1rem; 
 $fontMed: 1.5rem; 
 $fontLg: 2rem;
 $fontXlg: 4rem;
-// $fontSm: 0.5rem; 
-// $fontMed: 1rem; 
-// $fontLg: 1.5rem;
-// $fontXlg: 2.5rem;
+$fontXXlg: 8rem;
+$fontXXXlg: 12rem;
 $mapFontWeight:(
     "regular": 400,
     "medium": 500,

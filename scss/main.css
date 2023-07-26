@@ -27,7 +27,7 @@ html {
 
 .header__title {
   grid-area: HEAD;
-  font-family: "Dear Dreamer", sans-serif;
+  font-family: Dear Dreamer;
   font-size: 4rem;
   display: flex;
   align-self: flex-end;
@@ -38,7 +38,7 @@ html {
   flex-direction: column;
   justify-content: flex-end;
   text-align: right;
-  font-family: "Lymphatic", sans-serif;
+  font-family: Lymphatic;
   font-size: 2rem;
 }
 @media only screen and (max-width: 550px) {
@@ -56,7 +56,7 @@ html {
   display: grid;
   font-size: 1.5rem;
   color: rgb(58, 70, 100);
-  font-family: "Lymphatic", sans-serif;
+  font-family: Lymphatic;
   align-self: flex-end;
   padding-bottom: 6px;
 }
@@ -67,7 +67,7 @@ html {
 }
 
 .announcement, .announcement__event, .announcement__upcoming {
-  font-family: "Lymphatic", sans-serif;
+  font-family: Lymphatic;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -117,7 +117,7 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 24px;
 }
 .banner__card {
   border-radius: 4rem;
@@ -139,4 +139,139 @@ html {
 
 a:hover {
   color: rgba(100, 81, 58, 0.5);
+}
+
+.aboutBkgrdImg {
+  background-image: url(../img/ABOUTBKGRD.jpeg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutGrid {
+  color: whitesmoke;
+  font-family: Lymphatic;
+  margin: 4rem 10vw;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(1rem, auto);
+  grid-template-areas: "NAV NAV NAME" "TOP TOP TOP" "WHO  IMAGE  MISSION" "WHO  IMAGE  CONTACT" "FOOT FOOT FOOT";
+}
+@media only screen and (max-width: 550px) {
+  .aboutGrid {
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "NAV      NAME" "TOP      TOP" "WHO      WHO" "MISSION  MISSION" "CONTACT  CONTACT" "FOOT     FOOT";
+  }
+}
+
+.aboutNav {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: NAV;
+  display: flex;
+  padding: 12px;
+  border-bottom: 2px solid rgba(170, 170, 170, 0.75);
+}
+.aboutNav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+}
+
+.aboutName {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: NAME;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(170, 170, 170, 0.75);
+}
+
+.aboutWhoWeAre {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: WHO;
+  display: flex;
+  justify-content: center;
+  font-family: BEER02-A CROSS;
+  font-size: 12rem;
+}
+@media only screen and (max-width: 550px) {
+  .aboutWhoWeAre {
+    font-size: 4rem;
+  }
+}
+
+.aboutImage {
+  grid-area: IMAGE;
+  display: flex;
+  font-size: 1.5rem;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+}
+.aboutImage .box, .aboutImage .boxWhite, .aboutImage .boxRed {
+  width: 30rem;
+  height: 30rem;
+  background-color: transparent;
+}
+
+.aboutMission {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: MISSION;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: justify;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: Root Beer;
+}
+
+.aboutContact {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: CONTACT;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+.aboutContact > a {
+  color: white;
+  text-decoration: none;
+  text-align: justify;
+}
+
+.aboutTop {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: TOP;
+  height: 1.5rem;
+  height: 100%;
+}
+.aboutFoot {
+  background-color: rgba(0, 0, 0, 0.8);
+  grid-area: FOOT;
+  height: 8rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box, .boxWhite, .boxRed {
+  z-index: 1;
+  top: 0;
+  height: 2rem;
+  width: 2rem;
+}
+.boxRed {
+  background-color: red;
+}
+.boxWhite {
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */

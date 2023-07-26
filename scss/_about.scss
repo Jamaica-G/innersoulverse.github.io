@@ -1,0 +1,157 @@
+@import 'responsive';
+
+.aboutBkgrdImg{
+    background-image: url(../img/ABOUTBKGRD.jpeg) ;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bkgrdColor {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+
+.aboutGrid {
+    @include mobile {
+        grid-auto-columns: 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto); 
+        grid-template-areas: 
+        "NAV      NAME"
+        "TOP      TOP"
+        "WHO      WHO"
+        "MISSION  MISSION"
+        "CONTACT  CONTACT"
+        "FOOT     FOOT"
+    }
+    color: whitesmoke;
+    font-family: map-get($map: $mapFontFamily, $key: text);
+    margin: 4rem calc(100vw*0.1);
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(1rem, auto); 
+    grid-template-areas: 
+    "NAV NAV NAME"
+    "TOP TOP TOP"
+    "WHO  IMAGE  MISSION"
+    "WHO  IMAGE  CONTACT"
+    "FOOT FOOT FOOT"
+
+}
+
+
+
+.aboutNav {
+    @include bkgrdColor;
+    grid-area: NAV;
+    display: flex;
+    padding: 12px;
+    border-bottom: 2px solid $colorDivider;
+    > a {
+        text-decoration: none;
+        color: white;
+        font-size:4rem
+    }
+}
+
+.aboutName {
+    @include bkgrdColor;
+    grid-area: NAME;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+    font-size: $fontMed;
+    border-bottom: 2px solid $colorDivider;
+}
+
+.aboutWhoWeAre {
+    @include mobile {
+        font-size: $fontXlg;
+    }
+    @include bkgrdColor;
+    grid-area: WHO;
+    display: flex;
+    justify-content: center;
+    font-family:map-get($map: $mapFontFamily, $key: who); // mapping
+    font-size: $fontXXXlg;
+    
+}
+
+.aboutImage {
+    grid-area: IMAGE;
+    display: flex;
+    font-size: $fontMed;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    .box {
+        width: 30rem;
+        height: 30rem;
+            background-color: transparent;
+    }
+}
+
+.aboutMission{
+    @include bkgrdColor;
+    grid-area: MISSION;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: justify;
+    font-size: $fontLg;
+    font-weight: 100;
+    font-family: map-get($map: $mapFontFamily, $key: mission);
+}
+
+.aboutContact{
+    @include bkgrdColor;
+    grid-area: CONTACT;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: $fontMed;
+    padding-right: 2rem;
+    >a {
+        color: white;
+        text-decoration: none;
+        text-align: justify
+    }
+}
+
+.about {
+    &Top {
+        @include bkgrdColor;
+        grid-area: TOP;
+        height: $fontMed;
+        height: 100%
+    }
+    &Foot {
+        @include bkgrdColor;
+        grid-area: FOOT;
+        height: $fontXXlg;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding: 2rem
+    };
+}
+
+.box {
+    z-index: 1;
+    top: 0;
+    height: 2rem;
+    width: 2rem;
+    &Red {
+        @extend .box;
+        background-color: red;
+    }
+    &White {
+        @extend .box;
+        background-color: white;
+    }
+
+}

@@ -112,7 +112,7 @@ html {
 }
 
 .banner {
-  margin-top: 24px;
+  margin-top: 4rem;
   grid-area: BODY;
   display: flex;
   flex-direction: column;

@@ -117,7 +117,7 @@
 
 
 .banner {
-    margin-top: 24px;
+    margin-top: 4rem;
     grid-area: BODY;
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        
+
         &:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }

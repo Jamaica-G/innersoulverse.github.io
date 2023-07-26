@@ -1,17 +1,56 @@
 .blog {
+    &Bkgrd {
+        background: linear-gradient(to right, #FFA17F, #00223E) fixed
+    }
+    &Spot {
+        font-size: $fontXXlg;
+        font-family: map-get($map: $mapFontFamily, $key: "TITLE");
+
+    }
     &Container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        text-align: right;
+        align-items: center;
+        gap: 1rem;
+        font-family: map-get($map: $mapFontFamily, $key: "text");
+        margin-top: 2rem;
+        color: white;
     }
-    // &Card {
-    //     height: 200px;
-    //     width: 200px;
-    //     border: 1px solid red;
-    // }
+    
+    &Card {
+        display: grid;
+        grid-template-rows: 5vh 25vh;
+        grid-template-columns: 30vw 30vw;
+        gap: 2rem;
+        border: 3px solid white;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    &Display {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        padding: 0.5rem;
+
+    }
+
+    &Title {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: $fontLg;
+        padding: 0.5rem;
+        text-decoration: underline;
 
 
+    }
+
+    &Text {
+        padding: 0.5rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        font-size: $fontMed;
+        overflow: scroll;
+
+    }
 
 }
-

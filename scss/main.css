@@ -120,7 +120,7 @@ html {
   gap: 24px;
 }
 .banner__card {
-  border-radius: 4rem;
+  border-radius: 1rem;
   width: 70vw;
   overflow: hidden;
   position: relative;
@@ -303,5 +303,5 @@ a:hover {
   position: relative;
   top: 8rem;
   text-align: center;
-  font-size: 12rem;
+  font-size: 8rem;
 }/*# sourceMappingURL=main.css.map */

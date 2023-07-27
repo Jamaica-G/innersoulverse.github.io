@@ -5,8 +5,8 @@ const events = [
         url:"https://www.eventbrite.sg/e/singles-dining-in-the-dark-tickets-653722941917?aff=ebdssbdestsearch&from=6c5eb9b82ad211eeab738e25e12e3ac6",
         img: "./img/DID.png"
     },
-    {   title:"HALLOWEEN GAME CUBE - CHINESE VERSION (COMING SOON)", 
-        date:"10 SEPT",
+    {   title:"HALLOWEEN GAME CUBE - CHINESE VERSION ", 
+        date:"COMING THIS SEPT",
         url:"#",
         img: "./img/GAMECUBE.png"
     },

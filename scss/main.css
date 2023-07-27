@@ -99,7 +99,7 @@ html {
 }
 .announcement__event__date {
   grid-area: EVENT;
-  color: rgb(234, 160, 162);
+  color: rgb(218, 1, 102);
   font-weight: bold;
   padding-left: 6px;
 }
@@ -142,11 +142,13 @@ a:hover {
 }
 
 .aboutBkgrdImg {
-  background-image: url(../img/ABOUTBKGRD.jpeg);
+  background-image: url("../img/ABOUTBKGRD.jpeg");
+  z-index: -1;
+  width: 100%;
   height: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .aboutGrid {
@@ -171,7 +173,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
   grid-area: NAV;
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
   border-bottom: 2px solid rgba(170, 170, 170, 0.75);
 }
 .aboutNav > a {
@@ -299,28 +301,43 @@ a:hover {
   background-color: rgb(0, 119, 73);
 }
 
-.blogBkgrd {
-  background: linear-gradient(to right, #FFA17F, #00223E) fixed;
+.blogBg {
+  background-image: url("../img/BLOG1.jpeg");
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  filter: brightness(85%) contrast(120%);
 }
 .blogSpot {
   font-size: 8rem;
   font-family: BEER02-A CROSS;
+  color: rgb(218, 1, 102);
 }
 .blogContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   font-family: Lymphatic;
   margin-top: 2rem;
   color: white;
 }
+@media only screen and (max-width: 550px) {
+  .blogContainer {
+    gap: 1rem;
+  }
+}
 .blogCard {
+  background-color: rgba(0, 0, 0, 0.75);
   display: grid;
   grid-template-rows: 5vh 25vh;
-  grid-template-columns: 30vw 30vw;
+  grid-template-columns: 30vw 45vw;
   gap: 2rem;
-  border: 3px solid white;
+  border: 3px solid rgba(218, 1, 102, 0.75);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -346,7 +363,9 @@ a:hover {
   grid-row: 1/2;
   font-size: 2rem;
   padding: 0.5rem;
-  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  -webkit-text-decoration: underline rgba(218, 1, 102, 0.75) 0.5rem;
+          text-decoration: underline rgba(218, 1, 102, 0.75) 0.5rem;
 }
 @media only screen and (max-width: 550px) {
   .blogTitle {

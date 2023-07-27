@@ -1,11 +1,8 @@
 @import 'responsive';
 
+
 .aboutBkgrdImg {
-    background-image: url(../img/ABOUTBKGRD.jpeg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include bgImg('../img/ABOUTBKGRD.jpeg');
 }
 
 @mixin bkgrdColor {
@@ -46,7 +43,7 @@
     @include bkgrdColor;
     grid-area: NAV;
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem;
     border-bottom: 2px solid $colorDivider;
 
     >a {

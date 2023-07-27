@@ -5,7 +5,7 @@ const blogs = [
     title: "Preparation",
     text: "With the event just two weeks away, we were back for our second mock setup, feeling confident we'd have everything ready for the dry run by 5 pm. However, reality had other plans. Setting up took us an entire hour, and the purchased cloth failed to block out the light, leading to some last-minute curtain arrangements. The entrance pipe works were wonky, demanding additional reinforcements. To our dismay, the speakers couldn't be controlled by the phone volume. As the clock struck 7 pm, we were still figuring out the movement and guidance for participants.Well, hope everything works out !!!",
   },
-
+  
 ];
 
 blogs.forEach(b=>{

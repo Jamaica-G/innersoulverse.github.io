@@ -1,17 +1,25 @@
 .blog {
-    &Bkgrd {
-        background: linear-gradient(to right, #FFA17F, #00223E) fixed
+
+    &Bg {
+        @include bgImgFixed('../img/BLOG1.jpeg');
+        filter:brightness(85%) contrast(120%);
     }
+        
+
     &Spot {
         font-size: $fontXXlg;
         font-family: map-get($map: $mapFontFamily, $key: "TITLE");
+        color: $colorBlogSpot;
 
     }
     &Container {
+        @include mobile {
+            gap: 1rem;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
         font-family: map-get($map: $mapFontFamily, $key: "text");
         margin-top: 2rem;
         color: white;
@@ -22,11 +30,12 @@
             grid-template-rows: 25vh 5vh 25vh;
             grid-template-columns: 90vw;
         }
+        background-color: rgba(0,0,0,0.75);
         display: grid;
         grid-template-rows: 5vh 25vh;
-        grid-template-columns: 30vw 30vw;
+        grid-template-columns: 30vw 45vw;
         gap: 2rem;
-        border: 3px solid white;
+        border: 3px solid $colorBlogSpot2;
         border-radius: 1rem;
         overflow: hidden;
     }
@@ -51,7 +60,8 @@
         grid-row: 1 / 2;
         font-size: $fontLg;
         padding: 0.5rem;
-        text-decoration: underline;
+        text-underline-offset: 0.6rem;
+        text-decoration: underline $colorBlogSpot2 0.5rem ;
 
 
     }
@@ -64,7 +74,7 @@
         }
         font-size: $fontMed;
         overflow: scroll;
-
     }
+
 
 }

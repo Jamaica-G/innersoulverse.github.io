@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'responsive';
 
+.homeBgColor {
+}
+
 .home {
     @include mobile {
     grid-auto-columns: 1fr 1fr;
@@ -101,7 +104,7 @@
         border-bottom: 2px solid $colorDivider;
         &__date{
             grid-area: EVENT;
-            color: $colorEventDate;
+            color: $colorBlogSpot;
             font-weight: bold;
             padding-left: 6px;
         }   

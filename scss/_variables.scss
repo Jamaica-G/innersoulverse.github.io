@@ -2,8 +2,10 @@
 // https://www.color-hex.com/color-palette/11166
 $colorText: rgb(58, 70, 100);
 $colorHoverLink: rgba(100, 81, 58, 0.5);
-$colorEventDate: rgb(234, 160, 162);
 $colorDivider: rgba(170, 170, 170, 0.75);
+$colorBlogSpot: rgb(218,1,102);
+$colorBlogSpot2: rgba(218,1,102,0.75);
+
 $mapFontFamily: (
     "TITLE":BEER02-A CROSS,
     "mission":Root Beer,
@@ -23,4 +25,42 @@ $mapFontWeight: (
     "medium": 500,
     "bold":700
 );
-$screenSizeMobile: 800px
+$screenSizeMobile: 800px;
+
+
+@mixin bgColor($color) {
+    background: $color;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin bgImg ($img) {
+
+    background-image: url($img);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin bgImgFixed ($img) {
+
+    background-image: url($img);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+
+}

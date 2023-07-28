@@ -27,8 +27,8 @@
     
     &Card {
         @include mobile {
-            grid-template-rows: 25vh 5vh 25vh;
-            grid-template-columns: 90vw;
+            grid-template-rows:  5vh 25vh 25vh;
+            grid-template-columns: 80vw;
         }
         background-color: rgba(0,0,0,0.75);
         display: grid;
@@ -43,7 +43,7 @@
     &Display {
         @include mobile {
             grid-column: 1 / 2;
-            grid-row: 1 / 2;
+            grid-row: 2 / 2;
         }
         grid-column: 1 / 2;
         grid-row: 1 / -1;
@@ -57,7 +57,7 @@
     &Title {
         @include mobile {
             grid-column: 1 / 2;
-            grid-row: 2 / 3;
+            grid-row: 1 / 2;
         }
         grid-column: 2 / 3;
         grid-row: 1 / 2;

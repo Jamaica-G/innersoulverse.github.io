@@ -343,8 +343,8 @@ a:hover {
 }
 @media only screen and (max-width: 550px) {
   .blogCard {
-    grid-template-rows: 25vh 5vh 25vh;
-    grid-template-columns: 90vw;
+    grid-template-rows: 5vh 25vh 25vh;
+    grid-template-columns: 80vw;
   }
 }
 .blogDisplay {
@@ -357,7 +357,7 @@ a:hover {
 @media only screen and (max-width: 550px) {
   .blogDisplay {
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/2;
   }
 }
 .blogTitle {
@@ -372,7 +372,7 @@ a:hover {
 @media only screen and (max-width: 550px) {
   .blogTitle {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
 }
 .blogText {

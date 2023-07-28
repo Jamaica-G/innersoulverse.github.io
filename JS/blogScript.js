@@ -17,7 +17,7 @@ const blogs = [
 
   {   
     title: "Hello World 22 June 2023",
-    text: " After a gap of over two years since we first introduced dining in the dark at Yorimichu, we had to discontinue the experience due to COVID. We are excited to announce that we are back now, and we sincerely hope for everyone's continued support.",
+    text: " After a gap of over two years since we first introduced dining in the dark at Yorimichi, we had to discontinue the experience due to COVID. We are excited to announce that we are back now, and we sincerely hope for everyone's continued support.",
     display:
     '<img src="../img/22June2023/1.jpg" width="100%" height="98%">'
   },

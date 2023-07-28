@@ -387,4 +387,19 @@ a:hover {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+  border: 1px dotted red;
+  z-index: 999;
+}
+.eventBg {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-image: url("../img/DID/bg.jpg");
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@ const blogs = [
   
   {
     title: "Renewed Partnership 9 July 2023",
-    text: "We are overjoyed to reconnect with our event partner, Yorimichu, and absolutely thrilled to discover their new menus, showcased in their TikTok account. Additionally, they have extended their space by adding a new unit, and have allowed us to book our event in this delightful new cosy area with street inspired decor.",  
+    text: "We are overjoyed to reconnect with our event partner, Yorimichi, and absolutely thrilled to discover their new menus, showcased in their TikTok account. Additionally, they have extended their space by adding a new unit, and have allowed us to book our event in this delightful new cosy area with street inspired decor.",  
     display:
     '<img src="../img/09Jul2023/1.png" width="100%" height="98%">' +
     '<img src="../img/09Jul2023/2.png" width="100%" height="98%">' +

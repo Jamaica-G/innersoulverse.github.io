@@ -1,0 +1,29 @@
+@mixin box {
+    height: 100%;
+    width: 100%;
+    border: 2px solid blue
+}
+
+.eventEncore {
+
+        &Grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 0.25fr 1fr 2fr 1fr 2fr 2fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 2fr 0.25fr 1fr 2fr 1fr;
+            background-color: black;
+        }
+    
+        &Bg {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            border: 2px solid blue;
+        }
+    }
+
+
+
+
+

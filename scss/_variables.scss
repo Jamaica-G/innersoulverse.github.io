@@ -5,12 +5,15 @@ $colorHoverLink: rgba(100, 81, 58, 0.5);
 $colorDivider: rgba(170, 170, 170, 0.75);
 $colorBlogSpot: rgb(218,1,102);
 $colorBlogSpot2: rgba(218,1,102,0.75);
+$colorRequirementGold: rgba(255, 192, 0);
+$colorWhiteText:rgba(white,0.75);
 
 $mapFontFamily: (
-    "TITLE":BEER02-A CROSS,
+    "title":BEER02-A CROSS,
     "mission":Root Beer,
     "text":Lymphatic,
-    "name":Dear Dreamer,
+    "innersoulverse":Dear Dreamer,
+    'ringo':'Ringo',                           
 );
 // Font Sizes
 $fontSm: 1rem;

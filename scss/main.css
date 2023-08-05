@@ -1,3 +1,9 @@
+.testBox {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid red;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +13,12 @@
 html {
   font-size: 12px;
   color: rgb(58, 70, 100);
+}
+
+.testBox {
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid red;
 }
 
 .home {
@@ -395,7 +407,6 @@ a:hover {
   grid-template-rows: repeat(6, 1fr);
   height: 100vh;
   border: 1px dotted red;
-  z-index: 999;
 }
 .eventBg {
   grid-column: 1/-1;

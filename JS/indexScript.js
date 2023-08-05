@@ -21,9 +21,9 @@ events.forEach(e=>{
 })
 
 // banner
-events.forEach(e=>{
-    customBanner("banner","div","a","img","banner__card","href",e.url,"src",e.img,)
-})
+// events.forEach(e=>{
+//     customBanner("banner","div","a","img","banner__card","href",e.url,"src",e.img,)
+// })
 
 // *********
 // FUNCTIONS

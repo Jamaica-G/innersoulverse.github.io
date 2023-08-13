@@ -15,7 +15,7 @@ html {
   justify-content: space-between;
   grid-auto-columns: 3fr 1fr 15fr 3fr;
   grid-auto-rows: minmax(10px, auto);
-  grid-template-areas: "HEAD     HEAD MOTTO MENU" "UPCOMING EVENT EVENT EVENT" "BODY     BODY BODY  BODY" "FOOT     FOOT FOOT  FOOT";
+  grid-template-areas: "HEAD     HEAD MOTTO MENU" "UPCOMING UPCOMING UPCOMING UPCOMING" "BODY     BODY BODY  BODY" "FOOT     FOOT FOOT  FOOT";
 }
 @media only screen and (max-width: 550px) {
   .home {
@@ -36,7 +36,7 @@ html {
   grid-area: MENU;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   text-align: right;
   font-family: Lymphatic;
   font-size: 2rem;
@@ -119,6 +119,11 @@ html {
   flex-wrap: wrap;
   gap: 24px;
 }
+@media only screen and (max-width: 550px) {
+  .banner {
+    margin-top: 2rem;
+  }
+}
 .banner__card {
   border-radius: 1rem;
   width: 70vw;
@@ -142,7 +147,7 @@ a:hover {
 }
 
 .aboutBg {
-  background-image: url("../img/ABOUTBKGRD.jpeg");
+  background-image: url("../img/Background/ABOUTBKGRD.jpeg");
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -224,8 +229,8 @@ a:hover {
   }
 }
 .aboutImage .box, .aboutImage .boxGreen, .aboutImage .boxGold, .aboutImage .boxWhite, .aboutImage .boxRed {
-  width: 30rem;
-  height: 30rem;
+  width: 20rem;
+  height: 20rem;
   background-color: transparent;
 }
 
@@ -304,7 +309,7 @@ a:hover {
 }
 
 .blogBg {
-  background-image: url("../img/BLOG1.jpeg");
+  background-image: url("../img/Background/BLOG1.jpeg");
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -375,6 +380,7 @@ a:hover {
   .blogTitle {
     grid-column: 1/2;
     grid-row: 1/2;
+    font-size: 1.5rem;
   }
 }
 .blogText {
@@ -386,20 +392,6 @@ a:hover {
   .blogText {
     grid-column: 1/2;
     grid-row: 3/4;
+    font-size: 1rem;
   }
-}
-
-.eventGrid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  height: 100vh;
-  border: 1px dotted red;
-  z-index: 999;
-}
-.eventBg {
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  background-image: url("../img/DID/bg.jpg");
-  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

@@ -1,24 +1,41 @@
 
 const events = [
-    { title:"DINING IN THE DARK", 
-        date:"13 AUG",
+    { 
         url:"https://www.eventbrite.sg/e/singles-dining-in-the-dark-tickets-653722941917?aff=ebdssbdestsearch&from=6c5eb9b82ad211eeab738e25e12e3ac6",
-        img: "./img/DID.png"
+        img: "./img/Banner/GREEN.png"
     },
-    {   title:"HALLOWEEN GAME CUBE - CHINESE VERSION ", 
-        date:"COMING THIS SEPT",
+    {   
         url:"#",
-        img: "./img/GAMECUBE.png"
+        img: "./img/Banner/GAMECUBE.png"
+    },
+
+    {   
+        url:"#",
+        img: "./img/Banner/ENCORE.png"
+    },
+
+    {   
+        url:"#",
+        img: "./img/Banner/PUB.png"
+    },
+
+    {   
+        url:"#",
+        img: "./img/Banner/KTV.png"
+    },
+    {   
+        url:"#",
+        img: "./img/Banner/DID.png"
     },
 ]
 
 
 // announcement upcoming events
-events.forEach(e=>{
-    customElement("annoucement","span","announcement__event__date",e.date)
-    customElement("annoucement","a","announcement__event__title",e.title,e.url)
+// events.forEach(e=>{
+//     customElement("annoucement","span","announcement__event__date",e.date)
+//     customElement("annoucement","a","announcement__event__title",e.title,e.url)
 
-})
+// })
 
 // banner
 events.forEach(e=>{

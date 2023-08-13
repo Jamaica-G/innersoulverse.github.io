@@ -23,7 +23,7 @@
     grid-auto-rows: minmax(10px, auto); 
     grid-template-areas:
     "HEAD     HEAD MOTTO MENU"
-    "UPCOMING EVENT EVENT EVENT"
+    "UPCOMING UPCOMING UPCOMING UPCOMING"
     "BODY     BODY BODY  BODY"
     "FOOT     FOOT FOOT  FOOT"
 }
@@ -45,7 +45,7 @@
         grid-area: MENU;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         text-align: right;
         font-family: map-get($map: $mapFontFamily, $key: text);                                        
 
@@ -73,10 +73,10 @@
 
 .announcement {
     font-family: map-get($map: $mapFontFamily, $key: text);                                        
-
     font-size: $fontMed;
     text-decoration: none;
     &__upcoming {
+        
         margin-top: 24px;
         @extend .announcement;
         grid-area: UPCOMING;
@@ -120,6 +120,10 @@
 
 
 .banner {
+    @include mobile {
+        margin-top: 2rem;
+
+    }
     margin-top: 4rem;
     grid-area: BODY;
     display: flex;

@@ -1,7 +1,7 @@
 @import 'responsive';
 
 .aboutBg {
-    @include bgImgFixed('../img/ABOUTBKGRD.jpeg');
+    @include bgImgFixed('../img/Background/ABOUTBKGRD.jpeg');
 }
 
 @mixin bkgrdColor {
@@ -92,8 +92,8 @@
     align-items: center;
 
     .box {
-        width: 30rem;
-        height: 30rem;
+        width: 20rem;
+        height: 20rem;
         background-color: transparent;
     }
 }

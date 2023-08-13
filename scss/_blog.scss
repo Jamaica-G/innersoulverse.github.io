@@ -1,7 +1,7 @@
 .blog {
 
     &Bg {
-        @include bgImgFixed('../img/BLOG1.jpeg');
+        @include bgImgFixed('../img/Background/BLOG1.jpeg');
         filter:brightness(85%) contrast(120%);
     }
         
@@ -58,6 +58,7 @@
         @include mobile {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
+            font-size: $fontMed;
         }
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -74,6 +75,7 @@
         @include mobile {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
+            font-size: $fontSm;
         }
         font-size: $fontMed;
         overflow: scroll;

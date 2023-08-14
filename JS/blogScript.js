@@ -4,7 +4,7 @@ const blogs = [
   title:"Dining In the Dark 13 Aug 2023",
   text: "We recently hosted our first dining in the dark event since the onset of the pandemic. Our team was on-site at 3:30 PM to set up the venue. However, the setup process took a bit more time than anticipated, primarily because of the curtain installation. The challenge was securing the curtains in hard-to-reach places and ensuring no light leaks. Fortunately, we managed to complete this task just before 6:00 PM. Additionally, there were some issues with setting up the IR camera due to a change in devices. This caused a bit of panic as we received an early call from a participant who arrived before we were fully prepared. Despite this, our team rallied and ensured a smooth event eventually. The event itself ran a bit longer than planned, mainly because of the extra effort put into custom food preparation. Despite the extended duration, we received positive feedback from the participants. They found the experience intriguing, and the food was as fantastic as ever.",
   display:
-  '<iframe width="1271" height="715" src="https://www.youtube.com/embed/mB2AFasdEWM" title="Dining in the dark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+  '<iframe width="100%" height="98%" src="https://www.youtube.com/embed/mB2AFasdEWM" title="Dining in the dark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
 },
 
   {

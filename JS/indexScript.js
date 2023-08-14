@@ -1,7 +1,11 @@
 
 const events = [
+    {   
+        url:"https://www.eventbrite.sg/e/698184577867?aff=oddtdtcreator",
+        img: "./img/Banner/KTV.png"
+    },
     { 
-        url:"#",
+        url:"https://www.eventbrite.sg/e/698218669837?aff=oddtdtcreator",
         img: "./img/Banner/GREEN.png"
     },
     {   
@@ -19,10 +23,7 @@ const events = [
         img: "./img/Banner/PUB.png"
     },
 
-    {   
-        url:"#",
-        img: "./img/Banner/KTV.png"
-    },
+
     {   
         url:"#",
         img: "./img/Banner/DID.png"

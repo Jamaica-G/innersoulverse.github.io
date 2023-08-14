@@ -10,7 +10,6 @@
         font-size: $fontXXlg;
         font-family: map-get($map: $mapFontFamily, $key: "TITLE");
         color: $colorBlogSpot;
-
     }
     &Container {
         @include mobile {
@@ -50,36 +49,31 @@
         padding: 0.5rem;
         white-space: nowrap;
         overflow: auto;
-
-
     }
 
     &Title {
         @include mobile {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            font-size: $fontMed;
+            font-size: $fontSm;
+            line-height: 2rem;
         }
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         font-size: $fontLg;
         padding: 0.5rem;
         text-underline-offset: 0.6rem;
-        text-decoration: underline $colorBlogSpot2 0.5rem ;
-
-
+        text-decoration: underline $colorBlogSpot2 0.25rem ;
     }
 
     &Text {
-        padding: 0.5rem;
         @include mobile {
             grid-column: 1 / 2;
             grid-row: 3 / 4;
             font-size: $fontSm;
         }
+        padding: 1rem;
         font-size: $fontMed;
         overflow: scroll;
     }
-
-
 }

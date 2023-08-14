@@ -373,18 +373,19 @@ a:hover {
   font-size: 2rem;
   padding: 0.5rem;
   text-underline-offset: 0.6rem;
-  -webkit-text-decoration: underline rgba(218, 1, 102, 0.75) 0.5rem;
-          text-decoration: underline rgba(218, 1, 102, 0.75) 0.5rem;
+  -webkit-text-decoration: underline rgba(218, 1, 102, 0.75) 0.25rem;
+          text-decoration: underline rgba(218, 1, 102, 0.75) 0.25rem;
 }
 @media only screen and (max-width: 550px) {
   .blogTitle {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 .blogText {
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1.5rem;
   overflow: scroll;
 }

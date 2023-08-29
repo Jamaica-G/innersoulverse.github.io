@@ -1,4 +1,9 @@
 const blogs = [
+  {
+    title:"Karaoke Prep 30 Aug 2023",
+    text:"What better time to give our shiny new karaoke system a whirl before the big karaoke event? Three hours flew by in a whirlwind of fantastic song choices and top-notch sound that practically guarantees the success of the upcoming bash topped with  tea and yakitori.  Also, we snagged a sneak peek at the Halloween decorations in the works. Double the fun in one day.  https://www.facebook.com/photo?fbid=6269815389814313&set=pcb.6269816703147515",    
+    display:'<img src="../img/27Aug2023/1.png" width="100%" height="98%">'
+  },
 
 {
   title:"Dining In the Dark 13 Aug 2023",
@@ -8,7 +13,7 @@ const blogs = [
 },
 
   {
-    title: "Preparation 23 Jul 2023",
+    title: "Dining In the Dark Prep 23 Jul 2023",
     text: "With the event just two weeks away, we were back for our second mock setup, feeling confident we'd have everything ready for the dry run by 5 pm. However, reality had other plans. Setting up took us an entire hour, and the purchased cloth failed to block out the light, leading to some last-minute curtain arrangements. The entrance pipe works were wonky, demanding additional reinforcements. To our dismay, the speakers couldn't be controlled by the phone volume. As the clock struck 7 pm, we were still figuring out the movement and guidance for participants.Well, hope everything works out !!!",
     display:
     '<iframe width="100%" height="98%" src="https://www.youtube.com/embed/c-5sfkE6Mms" title="Dining in the Dark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',

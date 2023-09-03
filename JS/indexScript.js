@@ -8,6 +8,10 @@ const events = [
     img: "./img/Banner/GREEN.png",
   },
   {
+    url: "https://www.eventbrite.co.uk/e/712519082757?aff=oddtdtcreator",
+    img: "./img/Banner/DID.png",
+  },
+  {
     url: "#",
     img: "./img/Banner/GAMECUBE.png",
   },
@@ -20,11 +24,6 @@ const events = [
   {
     url: "#",
     img: "./img/Banner/PUB.png",
-  },
-
-  {
-    url: "#",
-    img: "./img/Banner/DID.png",
   },
 
   {

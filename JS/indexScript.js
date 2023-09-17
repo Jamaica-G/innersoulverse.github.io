@@ -1,14 +1,15 @@
 const events = [
-  {
-    url: "https://www.eventbrite.sg/e/698184577867?aff=oddtdtcreator",
-    img: "./img/Banner/KTV.png",
-  },
+
   {
     url: "https://www.eventbrite.sg/e/698218669837?aff=oddtdtcreator",
     img: "./img/Banner/GREEN.png",
   },
   {
-    url: "https://www.eventbrite.co.uk/e/712519082757?aff=oddtdtcreator",
+    url: "https://www.eventbrite.co.uk/e/singles-wolf-down-buffet-tickets-719903921007?aff=oddtdtcreator",
+    img: "./img/Banner/WOLF.png",
+  },
+  {
+    url: "#",
     img: "./img/Banner/DID.png",
   },
   {
@@ -20,16 +21,15 @@ const events = [
     url: "#",
     img: "./img/Banner/ENCORE.png",
   },
-
+  {
+    url: "#",
+    img: "./img/Banner/KTV.png",
+  },
   {
     url: "#",
     img: "./img/Banner/PUB.png",
   },
 
-  {
-    url: "#",
-    img: "./img/Banner/WOLF.png",
-  },
 ];
 
 // announcement upcoming events

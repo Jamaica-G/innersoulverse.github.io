@@ -1,12 +1,11 @@
 const events = [
-
   {
-    url: "https://www.eventbrite.sg/e/698218669837?aff=oddtdtcreator",
-    img: "./img/Banner/GREEN.png",
+    url: "https://www.eventbrite.sg/e/singles-wolf-down-buffet-tickets-723848188417?aff=oddtdtcreator",
+    img: "./img/Banner/WOLF-1.png",
   },
   {
-    url: "https://www.eventbrite.co.uk/e/singles-wolf-down-buffet-tickets-719903921007?aff=oddtdtcreator",
-    img: "./img/Banner/WOLF.png",
+    url: "#",
+    img: "./img/Banner/GREEN.png",
   },
   {
     url: "#",

@@ -82,9 +82,13 @@
         grid-area: UPCOMING;
         color: $colorText;
         display: flex;
+        gap:12px;
         padding: 6px 0px;
         border-top: 2px solid $colorDivider;
-        border-bottom: 2px solid $colorDivider
+        border-bottom: 2px solid $colorDivider;
+        a {
+            color: inherit; // disable visited color
+        }
 
     }
     &__event {

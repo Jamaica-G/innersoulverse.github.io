@@ -76,9 +76,13 @@ html {
   grid-area: UPCOMING;
   color: rgb(58, 70, 100);
   display: flex;
+  gap: 12px;
   padding: 6px 0px;
   border-top: 2px solid rgba(170, 170, 170, 0.75);
   border-bottom: 2px solid rgba(170, 170, 170, 0.75);
+}
+.announcement__upcoming a {
+  color: inherit;
 }
 .announcement__event {
   grid-area: EVENT;

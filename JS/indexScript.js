@@ -1,32 +1,21 @@
+const filePath = './img/Banner'
 const events = [
-  {
-    url: "https://www.eventbrite.sg/e/singles-wolf-down-buffet-tickets-723848188417?aff=oddtdtcreator",
-    img: "./img/Banner/WOLF-1.png",
-  },
-  {
-    url: "#",
-    img: "./img/Banner/GREEN.png",
-  },
-  {
-    url: "#",
-    img: "./img/Banner/DID.png",
-  },
-  {
-    url: "#",
-    img: "./img/Banner/GAMECUBE.png",
-  },
 
   {
     url: "#",
-    img: "./img/Banner/ENCORE.png",
+    img: `${filePath}/ICE-1.png`,
   },
   {
     url: "#",
-    img: "./img/Banner/KTV.png",
+    img: `${filePath}/GLOW.png`,
   },
   {
     url: "#",
-    img: "./img/Banner/PUB.png",
+    img: `${filePath}/ENCORE.png`
+  },
+  {
+    url: "#",
+    img: `${filePath}/GOLF.png`
   },
 
 ];

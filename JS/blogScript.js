@@ -1,13 +1,32 @@
 const blogs = [
+
+  {
+    title:"Collab with Peatix 19 Nov 2023",
+    text: "We were fortunate to collaborate with Peatix when Rachel from their team invited us to explore their platform. Remarkably, we experienced immediate success on the very same day when we posted Ice-Dream event.We managed to sell two tickets bringing our total registrations to the maximum capacity of eight participants allowed for the event.",
+    display:'<img style="object-fit: contain" src="../img/blog/2023/2023.11.19.peatix.jpg" width="100%" height="98%">'
+  },
+  {
+    title:"Ice-Dream that almost did not happend 29 Oct 2023",
+    text: "When initially organizing this event, we searched for workshops willing to collaborate at a reasonable cost. Unfortunately, most options demanded a minimum of $65 per attendee with a requirement of at least 10 participants. After a few days, a workshop reached out to us, assuring affordability and support for our event. However, over the subsequent weeks, the workshop owner became unresponsive to our inquiries. When she did reply, she seemed unfamiliar with our event details, that is a big red flag. But we didn't want to cancel this event, and disappoint the attendees who trusted us and registered, we reluctantly made one final search for workshops online, with the thought that it was going to fail anyway. Just when it seemed to be the case, Ice-Dream Chef, Tom, called.  We explained our predicament, and he generously stepped in to help. We were truly grateful and moved by the presence of reliable vendors like him. Another life lesson in business of not giving up", 
+    display:'<img style="object-fit: contain" src="../img/blog/2023/2023.10.29.ice.cream.chef.png" width="100%" height="98%">'
+
+  },
+
+  {
+    title:"Single Wolf Buffet 23 Oct 2023",
+    text:" We held high expectations for the buffet event, when you think that food is in our culture. Yorimichi collaborated with us to craft a special menu exclusively for our event, and the pricing was set at a very reasonable level. In an effort to enhance the event's attractiveness and bypass Eventbrite fees, we opted for free registration, with attendees expected to pay only through PayNow once we reach the target attendance. Although we successfully achieved the desired attendance numbers, only half of the attendees responded to our request for payment. In conclusion we need to reconsider our approach for future events. For now, we will continue with payment-first method through the platform to ensure the success of the event.",
+    display:'<img src="../img/blog/2023/2023.10.23.WOLF-1.png" width="100%" height="98%">'
+
+  },
   {
     title:"Green Hearts Vegan Dining 07 Oct 2023",
     text:"A big relief when the event came to a conclusion, and we were glad we made it work.  First of all we were not sure if we could host the event as we had imbalance gender ratio. Luckily, we managed to pull through in the final week, gathering two more male participants. And on the day of the event, we were a tad nervy about the kitchen's ability to cater to the vegan and allium-free dietary needs. And we were appreciative that the kitchen had paid attention to the requirements. Though the food according to feedback were fairly ok, we were applauded for our efforts. Looking forward to hosting more vegan-inclusive events in the future. A big thank you to the ground staffs and participants",    
-    display:'<img src="../img/2023.10.07 green/1.png" width="100%" height="98%">'
+    display:'<img src="../img/blog/2023/2023.10.07.green.png" width="100%" height="98%">'
   },
   {
     title:"Karaoke Prep 30 Aug 2023",
     text:"What better time to give our shiny new karaoke system a whirl before the big karaoke event? Three hours flew by in a whirlwind of fantastic song choices and top-notch sound that practically guarantees the success of the upcoming bash topped with  tea and yakitori.  Also, we snagged a sneak peek at the Halloween decorations in the works. Double the fun in one day.  https://www.facebook.com/photo?fbid=6269815389814313&set=pcb.6269816703147515",    
-    display:'<img src="../img/2023.08.27 ktv/1.png" width="100%" height="98%">'
+    display:'<img style="object-fit: contain" src="../img/blog/2023/2023.08.27.ktv.png" width="100%" height="98%">'
   },
 
 {
@@ -27,17 +46,17 @@ const blogs = [
   {
     title: "Renewed Partnership 9 July 2023",
     text: "We are overjoyed to reconnect with our event partner, Yorimichi, and absolutely thrilled to discover their new menus, showcased in their TikTok account. Additionally, they have extended their space by adding a new unit, and have allowed us to book our event in this delightful new cosy area with street inspired decor.",  
-    display:
-    '<img src="../img/09Jul2023/1.png" width="100%" height="98%">' +
-    '<img src="../img/09Jul2023/2.png" width="100%" height="98%">' +
-    '<img src="../img/09Jul2023/11.png"  width="100%" height="98%">' 
+    display: 
+    '<img style="object-fit: contain" src="../img/blog/2023.07.09 blog/1.png" width="100%" height="98%">' +
+    '<img style="object-fit: contain" src="../img/blog/2023.07.09 blog/2.png" width="100%" height="98%">' +
+    '<img style="object-fit: contain" src="../img/blog/2023.07.09 blog/11.png"  width="100%" height="98%">' 
   },
 
   {   
     title: "Hello World 22 June 2023",
     text: " After a gap of over two years since we first introduced dining in the dark at Yorimichi, we had to discontinue the experience due to COVID. We are excited to announce that we are back now, and we sincerely hope for everyone's continued support.",
     display:
-    '<img src="../img/22June2023/1.jpg" width="100%" height="98%">'
+    '<img src="../img/blog/2023.06.23 blog/1.jpg" width="100%" height="98%">'
   },
 ];
 

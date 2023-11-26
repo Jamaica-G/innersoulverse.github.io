@@ -7,7 +7,7 @@ const blogs = [
   },
   {
     title:"Ice-Dream that almost did not happend 29 Oct 2023",
-    text: "When initially organizing this event, we searched for workshops willing to collaborate at a reasonable cost. Unfortunately, most options demanded a minimum of $65 per attendee with a requirement of at least 10 participants. After a few days, a workshop reached out to us, assuring affordability and support for our event. However, over the subsequent weeks, the workshop owner became unresponsive to our inquiries. When she did reply, she seemed unfamiliar with our event details, that is a big red flag. But we didn't want to cancel this event, and disappoint the attendees who trusted us and registered, we reluctantly made one final search for workshops online, with the thought that it was going to fail anyway. Just when it seemed to be the case, Ice-Dream Chef, Tom, called.  We explained our predicament, and he generously stepped in to help. We were truly grateful and moved by the presence of reliable vendors like him. Another life lesson in business of not giving up", 
+    text: "When initially organizing this event, we searched for workshops willing to collaborate at a reasonable cost. Unfortunately, most options demanded a minimum of $65 per attendee with a requirement of at least 10 participants. After a few days, a workshop reached out to us, assuring affordability and support for our event. However, over the subsequent weeks, the workshop owner became unresponsive to our inquiries. When she did reply, she seemed unfamiliar with our event details, that is a big red flag. But we didn't want to cancel this event, and disappoint the attendees who trusted us and registered, we reluctantly made one final search for workshops online, with the thought that it was going to fail anyway. Just when it seemed to be the case, Ice Cream Chef, Tom, called.  We explained our predicament, and he generously stepped in to help. We were truly grateful and moved by the presence of reliable vendors like him. Another life lesson in business of not giving up", 
     display:'<img style="object-fit: contain" src="../img/blog/2023/2023.10.29.ice.cream.chef.png" width="100%" height="98%">'
 
   },
@@ -55,8 +55,7 @@ const blogs = [
   {   
     title: "Hello World 22 June 2023",
     text: " After a gap of over two years since we first introduced dining in the dark at Yorimichi, we had to discontinue the experience due to COVID. We are excited to announce that we are back now, and we sincerely hope for everyone's continued support.",
-    display:
-    '<img src="../img/blog/2023.06.23 blog/1.jpg" width="100%" height="98%">'
+    display: '<img src="../img/blog/2023.06.23 blog/1.jpg" width="100%" height="98%">'
   },
 ];
 

@@ -3,14 +3,6 @@ const events = [
 
   {
     url: "#",
-    img: `${filePath}/ICE-1.png`,
-  },
-  {
-    url: "#",
-    img: `${filePath}/GLOW.png`,
-  },
-  {
-    url: "#",
     img: `${filePath}/ENCORE.png`
   },
   {

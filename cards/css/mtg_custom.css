@@ -79,7 +79,7 @@ header {
 }
 
 header div {
-    padding: 5px 8px 3px; 
+    padding: 8px 8px 3px; 
     background: radial-gradient(ellipse farthest-corner, #E0E7ED 50%, #BDC6CD);
     position: relative;
     border: 2px solid #000; 
@@ -93,7 +93,7 @@ header.card-name {
 }
 
 header.card-name div {
-	height: 34px; 
+	height: 40px; 
 }
 
 .textBox { 

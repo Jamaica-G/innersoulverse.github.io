@@ -19,8 +19,12 @@ body {
   height: 100vh;  
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
 .container {
-  backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(6px) saturate(100%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.25);
   border-radius: 12px;

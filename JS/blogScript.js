@@ -24,18 +24,18 @@ const blogs = [
   {
     title:"Single Wolf Buffet 23 Oct 2023",
     text:" We held high expectations for the buffet event, when you think that food is in our culture. Yorimichi collaborated with us to craft a special menu exclusively for our event, and the pricing was set at a very reasonable level. In an effort to enhance the event's attractiveness and bypass Eventbrite fees, we opted for free registration, with attendees expected to pay only through PayNow once we reach the target attendance. Although we successfully achieved the desired attendance numbers, only half of the attendees responded to our request for payment. In conclusion we need to reconsider our approach for future events. For now, we will continue with payment-first method through the platform to ensure the success of the event.",
-    display:'<img src="../img/blog/2023/2023.10.23.WOLF-1.png" width="100%" height="98%">'
+    display:'<img style="object-fit: contain"  src="../img/blog/2023/2023.10.23.WOLF-1.png" width="100%" height="98%">'
 
   },
   {
     title:"Green Hearts Vegan Dining 07 Oct 2023",
     text:"A big relief when the event came to a conclusion, and we were glad we made it work.  First of all we were not sure if we could host the event as we had imbalance gender ratio. Luckily, we managed to pull through in the final week, gathering two more male participants. And on the day of the event, we were a tad nervy about the kitchen's ability to cater to the vegan and allium-free dietary needs. And we were appreciative that the kitchen had paid attention to the requirements. Though the food according to feedback were fairly ok, we were applauded for our efforts. Looking forward to hosting more vegan-inclusive events in the future. A big thank you to the ground staffs and participants",    
-    display:'<img src="../img/blog/2023/2023.10.07.green.png" width="100%" height="98%">'
+    display:'<img style="object-fit: contain"  src="../img/blog/2023/2023.10.07.green.png" width="100%" height="98%">'
   },
   {
     title:"Karaoke Prep 30 Aug 2023",
     text:"What better time to give our shiny new karaoke system a whirl before the big karaoke event? Three hours flew by in a whirlwind of fantastic song choices and top-notch sound that practically guarantees the success of the upcoming bash topped with  tea and yakitori.  Also, we snagged a sneak peek at the Halloween decorations in the works. Double the fun in one day.  https://www.facebook.com/photo?fbid=6269815389814313&set=pcb.6269816703147515",    
-    display:'<img style="object-fit: contain" src="../img/blog/2023/2023.08.27.ktv.png" width="100%" height="98%">'
+    display:'<img style="object-fit: contain"  style="object-fit: contain" src="../img/blog/2023/2023.08.27.ktv.png" width="100%" height="98%">'
   },
 
 {
@@ -64,7 +64,7 @@ const blogs = [
   {   
     title: "Hello World 22 June 2023",
     text: " After a gap of over two years since we first introduced dining in the dark at Yorimichi, we had to discontinue the experience due to COVID. We are excited to announce that we are back now, and we sincerely hope for everyone's continued support.",
-    display: '<img src="../img/blog/2023.06.23 blog/1.jpg" width="100%" height="98%">'
+    display: '<img style="object-fit: contain"  src="../img/blog/2023.06.23 blog/1.jpg" width="100%" height="98%">'
   },
 ];
 

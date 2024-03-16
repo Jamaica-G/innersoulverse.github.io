@@ -3,18 +3,14 @@ const events = [
 
   {
     url: "#",
-    img: `${filePath}/KTV.png`
+    img: `${filePath}/DID.png`
   },
 
   {
     url: "#",
-    img: `${filePath}/PUB.png`
+    img: `${filePath}/GOLF.png`
   },
 
-  {
-    url: "#",
-    img: `${filePath}/PRIVATEDINE.png`
-  },
 ];
 
 // announcement upcoming events

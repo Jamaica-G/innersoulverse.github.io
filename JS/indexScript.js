@@ -1,15 +1,26 @@
 const filePath = './img/Banner'
 const events = [
+  {
+    url: "#",
+    img: `${filePath}/PRIVATEDINE_ARTS.png`
+  },
 
   {
     url: "#",
-    img: `${filePath}/DID.png`
+    img: `${filePath}/PRIVATEDINE_SPORTS.png`
   },
 
   {
     url: "#",
     img: `${filePath}/GOLF.png`
   },
+
+  {
+    url: "#",
+    img: `${filePath}/DID.png`
+  },
+
+
 
 ];
 

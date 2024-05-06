@@ -1,6 +1,19 @@
 const blogs = [
+
+
   {
-    title:"Singles Private Dining 02 Mar 2024 - A party of six ",
+    title:"One Hundred Fifty Followers Milestone 07 May 2024",
+    text: "When we first started out, we set a goal to to reach 100 followers but exceeded expectations with 150 (Eventbrite + Peatix).Hopefully, we could double this figure (300) in our second year.",
+    display:'<img style="object-fit: contain" src="../img/blog/2024/2024.05.07 followers.png" width="100%" height="98%">'
+  },
+
+  {
+    title:"Singles Mytery Golf 04 May 2024 - May the Full Force ",
+    text: "This was the first time we experienced a full turnout at our events among all our sold out events !! All registered attendee present—and we mark this day with a photo with the participants. Hopefully, this becomes a more frequent occurrence. Yet, amidst our elation, our ground staff were unexpectedly denied access to the 9th hole bar without valid tickets, despite prior arrangements. Fortunately, the staff on duty in Kulnari managed to get it cleared with management to allow entry for just one of our two ground staffs . Participants also had the chance to enjoy the newly completed 19th hole, adding to the day's successes. Though the event ran slightly longer than planned 90 mins, lasting around 2 hours (noted)",
+    display:'<img style="object-fit: contain" src="../img/blog/2024/2024.05.04 Kulnari1.jpeg" width="100%" height="98%">'
+  },
+  {
+    title:"Singles Private Dining 02 Mar 2024 - A party of six",
     text: "The private dining experience was supposed to be a one-to-one rotation session. The first week started very well with four sign-ups, and we were optimistic that we could conclude the registration sooner than expected. However, as subsequent weeks passed, only one person registered for the next four weeks, and another joined on the day of the event. In order not to cancel the event, we changed the setup into a group gathering, seating the six attendees together. Surprisingly, this adjustment led to unforeseen positive outcomes. The group's interaction was fantastic, and even extended their stay by about an hour, aided by the presence of sake. We expressed gratitude to the attendees for allowing us to modify the dining arrangement, realizing that a table for six might indeed offer a more enjoyable dining experience.",
     display:'<img style="object-fit: contain" src="../img/blog/2024/2024.03.02.PRIVATEDINE.png" width="100%" height="98%">'
   },
